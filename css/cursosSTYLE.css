@@ -1,0 +1,60 @@
+/* Estilo personalizado para el navbar */
+.custom-navbar {
+  background-color: #f0f0f0; /* Blanco ligeramente oscuro */
+  padding: 1rem 2rem; /* Hacer el navbar más ancho */
+}
+
+.navbar-brand img {
+  vertical-align: middle;
+}
+
+/* Centrar el texto del navbar */
+.navbar-text.mx-auto {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: bold;
+  color: blue; /* Cambiar el color del texto a azul */
+}
+
+/* Estilo para las letras */
+.nav-link, .navbar-text {
+  font-weight: bold;
+  font-size: 1.2rem; /* Ajuste inicial del tamaño de la letra */
+  color: blue; /* Cambiar el color del texto a azul */
+}
+
+/* Asegurar que las secciones queden alineadas a la derecha */
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Ajustes para que el navbar no se colapse */
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+}
+
+/* Hacer que las letras se adapten al tamaño del navbar */
+@media (max-width: 768px) {
+  .nav-link, .navbar-text {
+    font-size: 1rem; /* Ajustar el tamaño de la letra para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link, .navbar-text {
+    font-size: 0.9rem; /* Ajustar el tamaño de la letra para pantallas más pequeñas */
+  }
+}
+
+
+
+
+
+
+
+

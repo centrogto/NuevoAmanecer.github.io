@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quienes somos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Sitio web del centro">
+    <meta name="Keywords" content="bootstrap">
+    <meta name="author" content="Miguel Ponce">
+    <link href="css/somosSTYLE.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: white;
+        }
+        .content {
+            margin: 20px;
+        }
+        .navbar {
+            justify-content: center;
+            border-bottom: 2px solid blue;
+            background-color: white;
+        }
+        .navbar-brand,
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav .nav-item {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+        }
+        footer {
+            background-color: #E6F1FC; /* Fondo azul claro */
+            padding: 20px;
+        }
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 10px;
+        }
+        .footer-bottom {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .about-section .about-item {
+            flex: 1;
+            margin: 0 10px;
+            text-align: justify;
+        }
+        .about-section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar-nav {
+                margin-top: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar-nav .nav-item {
+                margin: 10px 0;
+                text-align: center;
+            }
+            .about-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-item {
+                text-align: center;
+            }
+            iframe {
+                width: 100%;
+            }
+            .navbar-title-sm {
+                display: none; /* Oculta el título en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="col-md-12">
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/losoSI.png" alt="Logo" width="120" height="102" class="d-inline-block align-text-top">
+        </a>
+        <span class="navbar-text mx-auto navbar-title-sm">
+            Centro GTO Contigo SI Nuevo Amanecer
+        </span>
+        <span class="navbar-text mx-auto">
+            
+        </span>
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a style="color: blue" class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: blue" class="nav-link" href="somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: blue" class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: blue" class="nav-link" href="cursos.html">Cursos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+
+<div class="content">
+    <div class="about-section">
+        <div class="about-item">
+            <h3>Nosotros</h3>
+            <p>GTO Contigo Sí es una iniciativa gubernamental que fortalece el tejido y la cohesión de la sociedad guanajuatense fomentando su participación, empoderamiento y el desarrollo de sus capacidades, mediante la articulación de procesos y programas gubernamentales innovadores contribuyendo así, a mejorar la calidad de vida de las y los guanajuatenses.</p>
+        </div>
+        <div class="about-item">
+            <img src="images/nosotros.jpg" alt="Nosotros" width="300" height="220">
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="about-item">
+            <img src="images/proposito.jpeg" alt="Propósito" width="300" height="200">
+        </div>
+        <div class="about-item">
+            <h3>Propósito</h3>
+            <p>Que la población que habita principalmente en las zonas de atención prioritaria del estado de Guanajuato, amplíe sus capacidades en educación, salud e ingresos, así como en espacios adecuados para su convivencia y desarrollo familiar en un entorno de paz y valores, mediante un esquema innovador de participación social, gobernanza y vida comunitaria.</p>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="about-item">
+            <h3>Misión y Valores</h3>
+            <p>Proporcionar el desarrollo de las personas, familias y comunidades guanajuatenses, mediante acciones de formación y bienestar social, que mejoran su calidad de vida. Los guanajuatenses somos una sociedad incluyente, articulada con el gobierno, que planeamos y construimos participativamente nuestro desarrollo. A su vez de ser una dependencia reconocida por su trabajo que en colaboración con la ciudadanía dignifica a la persona, las familias y las comunidades de manera oportuna, efectiva, transparente y abierta para mejorar la calidad de vida de las y los guanajuatenses.</p>
+        </div>
+        <div class="about-item">
+            <img src="images/fachada.png" alt="Misión y Valores" width="300" height="220">
+        </div>
+    </div>
+
+    <div style="text-align: center">
+        <h2 style="color: blue">UBICACIÓN</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6259.532746932341!2d-101.60362082330654!3d21.114940599685333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1720800447820!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-columns">
+        <div class="footer-column">
+            <img src="images/losoSI.png" alt="Logo" width="180" height="100"> <br> <br>
+            <img src="images/pru.png.webp" alt="Logo" width="180" height="100">
+        </div>
+        <div class="footer-column">
+            <p>Contacto: cisnuevoamanecerleon@guanajuato.gob.mx</p>
+            <p>Tel: 477-792-0346</p>
+        </div>
+        <div class="footer-column">
+            <p>Dirección:</p>
+            <p>Blvd Delta 3002 col. Nuevo Amanecer C.P. 37299 Guanajuato </p>
+        </div>
+        <div class="footer-column">
+            <p>Redes Sociales:</p>
+            <p>
+                <a href="https://www.facebook.com/pages/Centro-Impulso-Social-Nuevo-Amanecer/146973942789245" target="_blank">Facebook</a><br>
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Centro GTO Contigo SI Nuevo Amanecer. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-6qF0J8H2t+hK7xwgA5K3p4p3f7nTyyGxlfTADFLyKq2pizW1cXBOjJgYtnoEa0Jf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-bR/jVSMu4LkBj1FSe3Aak2O6kEJeFT1yjkFkpZ4qNCo2H6FJT4x1X7zg0d4IvNdL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Cursos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name ="Descripcion" content ="Sitio web del centro">
+        <meta name ="keywords" content ="cursos">
+        <meta name ="author" content ="Miguel Ponce">
+        <link href="css/cursosSTYLE.css" rel="stylesheet" type="text/css"/>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+           
+            text-align: left;
+        }
+        th {
+            background-color: blue;
+            color: white;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: blue;
+        }
+        .notes {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .content {
+            margin: 20px;
+        }
+        footer {
+            background-color: #E6F1FC;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para el navbar y footer */
+        .navbar {
+            justify-content: center;
+            border-bottom: 2px solid blue;
+            background-color: white;
+        }
+        .navbar-brand,
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav .nav-item {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+        }
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 10px;
+        }
+        .footer-bottom {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        /* Media queries para ajustes en pantallas pequeñas */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-columns {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar-text-sm {
+                display: none; /* Oculta el texto en pantallas pequeñas */
+            }
+            table {
+                font-size: 22px; /* Reducir tamaño de fuente en pantallas pequeñas */
+            }
+        }
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="col-md-12">
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/losoSI.png" alt="Logo" width="120" height="102" class="d-inline-block align-text-top">
+      </a>
+      <span class="navbar-text mx-auto navbar-text-sm">
+                    Centro GTO Contigo SI Nuevo Amanecer
+                </span>
+      <div class="navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+              <a style="color: blue" class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+              <a style="color: blue" class="nav-link" href="somos.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+              <a style="color: blue" class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+              <a style="color: blue" class="nav-link" href="cursos.html">Cursos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   </div>
+    
+    
+    
+    <div class="title">Cursos y Talleres 2024</div>
+   
+<div class="content">
+    <div class="table-responsive">
+    <table>
+        <thead>
+            <tr>
+                <th>CURSOS</th>
+                <th>DIAS</th>
+                <th>HORARIOS</th>
+                <th>CUOTA DE RECUPERACIÓN</th>
+                <th>OBSERVACIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Adultos Mayores</td>
+                <td>Lunes y Jueves</td>
+                <td>9 AM a 12 PM</td>
+                <td>Gratuito</td>
+                <td>Impartido por el DIF ESTATAL</td>
+            </tr>
+            <tr>
+                <td>Alaciado Permanente</td>
+                <td>Lunes y Viernes</td>
+                <td>10:00 AM a 2:00 PM</td>
+                <td>$50.00</td>
+                <td>Clase de Exhibición 22 de abril (Limitado)</td>
+            </tr>
+            <tr>
+                <td>Ritmos Latinos</td>
+                <td>Lunes y Viernes</td>
+                <td>7:00 a 9:00 PM</td>
+                <td>$30.00</td>
+                <td>Ven con algún amigo y disfruta del baile</td>
+            </tr>
+            <tr>
+                <td>Basquetbol Adultos</td>
+                <td>Martes y Jueves</td>
+                <td>6:00 a 7:30 PM</td>
+                <td>$40.00</td>
+                <td>A partir de 15 años</td>
+            </tr>
+            <tr>
+                <td>Basquetbol Niños</td>
+                <td>Lunes y Miércoles</td>
+                <td>5:00 a 6:00 PM</td>
+                <td>$45.00</td>
+                <td>A partir de 6 años</td>
+            </tr>
+            <tr>
+                <td>Cocina Japonesa</td>
+                <td>Viernes</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$40.00</td>
+                <td>Iniciamos 13 de mayo (Limitado 4 clases)</td>
+            </tr>
+            <tr>
+                <td>Coctelería</td>
+                <td>Jueves</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$40.00</td>
+                <td>Iniciamos 27 de abril (No necesitas material)</td>
+            </tr>
+            <tr>
+                <td>Computación Básica</td>
+                <td>Martes y Jueves</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$40.00</td>
+                <td>A partir de 8 años</td>
+            </tr>
+            <tr>
+                <td>Crochet - Amigurumis Básico e Intermedio</td>
+                <td>Martes y Jueves</td>
+                <td>9:00 AM a 11:30 AM</td>
+                <td>$40.00</td>
+                <td>A partir de 13 años</td>
+            </tr>
+            <tr>
+                <td>Capoeira (Afrobrasileña)</td>
+                <td>Miércoles y Viernes</td>
+                <td>8:00 AM a 9:30 PM</td>
+                <td>Gratuito</td>
+                <td>Resistencia, Estímulo, Danza, Artes marciales</td>
+            </tr>
+            <tr>
+                <td>Dibujo y Pintura</td>
+                <td>Lunes y Miércoles</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$40.00</td>
+                <td>A partir de 5 años, incluye 1 kg de arcilla</td>
+            </tr>
+            <tr>
+                <td>Dibujo Anime</td>
+                <td>Martes y Jueves</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$30.00</td>
+                <td>A partir de 8 años (Con material básico)</td>
+            </tr>
+            <tr>
+                <td>Eduardo Cobra</td>
+                <td>Sábados</td>
+                <td>11:00 AM a 1:00 PM</td>
+                <td>$30.00</td>
+                <td>A partir de 6 años</td>
+            </tr>
+            <tr>
+                <td>Excel Básico - Básico-Intermedio</td>
+                <td>Miércoles</td>
+                <td>4:30 a 6:30 PM</td>
+                <td>$20.00</td>
+                <td>A partir de 10 años</td>
+            </tr>
+            <tr>
+                <td>Flores de Bach</td>
+                <td>Lunes, Martes y Miércoles</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$30.00</td>
+                <td>Traer alcohol de 96 grados y botella con gotero (No hay límite)</td>
+            </tr>
+            <tr>
+                <td>Futbol Niños</td>
+                <td>Martes y Jueves</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$30.00</td>
+                <td>A partir de 11 años</td>
+            </tr>
+            <tr>
+                <td>Futbol Jóvenes</td>
+                <td>Sábados</td>
+                <td>6:00 a 7:30 PM</td>
+                <td>$30.00</td>
+                <td>A partir de 15 años</td>
+            </tr>
+            <tr>
+                <td>Gimnasia Artística</td>
+                <td>Lunes, Martes y Miércoles</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$40.00</td>
+                <td>A partir de 5 años (Llevar toalla)</td>
+            </tr>
+            <tr>
+                <td>Gimnasia Rítmica</td>
+                <td>Lunes, Martes y Miércoles</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$40.00</td>
+                <td>Por Iniciar (Sin fecha)</td>
+            </tr>
+            <tr>
+                <td>Hawaiano</td>
+                <td>Lunes a Miércoles</td>
+                <td>6:00 a 7:00 PM</td>
+                <td>$30.00</td>
+                <td>A partir de 5 años</td>
+            </tr>
+            <tr>
+                <td>Patinaje en Línea Básico - Patinaje Avanzado</td>
+                <td>Martes y Jueves</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$35.00</td>
+                <td>Por Iniciar (Sin fecha)</td>
+            </tr>
+            <tr>
+                <td>Piano (Teclado)</td>
+                <td>Sábados</td>
+                <td>10:00 AM a 12 PM</td>
+                <td>$40.00</td>
+                <td>A partir de 10 años</td>
+            </tr>
+            <tr>
+                <td>Repostería para Niños</td>
+                <td>Sábados</td>
+                <td>9:00 AM a 11:00 AM</td>
+                <td>$35.00</td>
+                <td>A partir de 6 años</td>
+            </tr>
+            <tr>
+                <td>Taekwondo Matutino</td>
+                <td>Martes, Jueves y Sábado</td>
+                <td>9:00 AM a 11:00 AM</td>
+                <td>$20.00</td>
+                <td>A partir de 5 años (Llevar uniforme)</td>
+            </tr>
+            <tr>
+                <td>Hapkido Defensa Personal</td>
+                <td>Lunes y Viernes</td>
+                <td>6:00 a 7:30 PM</td>
+                <td>$40.00</td>
+                <td>A partir de 5 años (Llevar uniforme)</td>
+            </tr>
+            <tr>
+                <td>Uñas de Acrílico Básico</td>
+                <td>Martes y Jueves</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$35.00</td>
+                <td>A partir de 13 años</td>
+            </tr>
+            <tr>
+                <td>Uñas de Acrílico Avanzado</td>
+                <td>Miércoles</td>
+                <td>4:30 a 7:00 PM</td>
+                <td>$35.00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Yoga Adultos</td>
+                <td>Martes y Jueves</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$30.00</td>
+                <td>A partir de 15 años</td>
+            </tr>
+            <tr>
+                <td>Yoga Niños</td>
+                <td>Martes y Jueves</td>
+                <td>4:00 a 6:00 PM</td>
+                <td>$30.00</td>
+                <td>A partir de 8 años</td>
+            </tr>
+            <tr>
+                <td>Zumba Matutino</td>
+                <td>Lunes y Viernes</td>
+                <td>7:00 a 8:00 AM</td>
+                <td>Gratuito</td>
+                <td>A partir de 7 años en adelante (No hay límite)</td>
+            </tr>
+            <tr>
+                <td>Regularización</td>
+                <td>Lunes a Viernes</td>
+                <td>3:30 a 6:00 PM</td>
+                <td>Gratuito</td>
+                <td>Preescolar y primaria</td>
+            </tr>
+            <tr>
+                <td>Inglés</td>
+                <td>Martes y Jueves</td>
+                <td>5:30 a 6:30 PM</td>
+                <td>$40.00</td>
+                <td>Niños de 7 a 14 años</td>
+            </tr>
+            <tr>
+                <td>Francés Avanzado</td>
+                <td>Lunes y Viernes</td>
+                <td>6:30 a 7:30 PM</td>
+                <td>$40.00</td>
+                <td>Adultos</td>
+            </tr>
+            <tr>
+                <td>Francés Básico Nivel 1</td>
+                <td>Lunes</td>
+                <td>6:30 a 7:30 PM</td>
+                <td>$40.00</td>
+                <td>Niños de 7 años en adelante</td>
+            </tr>
+            <tr>
+                <td>Ventanilla de Empleo</td>
+                <td>Lunes a Viernes</td>
+                <td>9:00 AM a 4:00 PM</td>
+                <td>Gratuito</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+    <div class="notes content">
+        <p><strong>REQUISITOS DE INSCRIPCIÓN:</strong> Copias CURP, Comprobante de domicilio RECIENTE e INE (Para menores de edad el INE del padre o tutor). Tel: 4771206685, Blvd. Delta 3002 col. Nuevo Amanecer, Correo: disnuevoamanecergto@guanajuato.gob.mx, Horario de atención Lunes a Viernes de 9 am a 7 pm.</p>
+    </div>
+<footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <img src="images/losoSI.png" alt="Logo" width="180" height="100"> <br> <br>
+                <img src="images/pru.png.webp" alt="Logo" width="180" height="100">
+            </div>
+            <div class="footer-column">
+                <p>Contacto: cisnuevoamanecerleon@guanajuato.gob.mx</p>
+                <p>Tel: 477-792-0346</p>
+            </div>
+            <div class="footer-column">
+                <p>Dirección:</p>
+                <p>Blvd Delta 3002 col. Nuevo Amanecer C.P. 37299 <br> Guanajuato </p>
+            </div>
+            <div class="footer-column">
+                <p>Redes Sociales:</p>
+                <p>
+                    <a href="https://www.facebook.com/pages/Centro-Impulso-Social-Nuevo-Amanecer/146973942789245" target="_blank">Facebook</a><br>
+                    
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Centro GTO Contigo SI Nuevo Amanecer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

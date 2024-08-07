@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <meta name="Descripcion" content="Sitio web del centro">
+    <meta name="keywords" content="servicios">
+    <meta name="author" content="Miguel Ponce">
+    <link href="css/servicioSTYLE.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: left;
+        }
+        th {
+            background-color: blue;
+            color: white;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: blue;
+        }
+        .notes {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .content {
+            margin: 20px;
+        }
+        footer {
+            background-color:#E6F1FC;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para el navbar y footer */
+        .navbar {
+            justify-content: center;
+            border-bottom: 2px solid blue;
+            background-color: white;
+        }
+        .navbar-brand,
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav .nav-item {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+        }
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 10px;
+        }
+        .footer-bottom {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        /* Media queries para ajustes en pantallas pequeñas */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-columns {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar-text-sm {
+                display: none; /* Oculta el texto en pantallas pequeñas */
+            }
+            table {
+                font-size: 22px; /* Reducir tamaño de fuente en pantallas pequeñas */
+            }
+        }
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/losoSI.png" alt="Logo" width="120" height="102" class="d-inline-block align-text-top">
+                </a>
+                <span class="navbar-text mx-auto navbar-text-sm">
+                    Centro GTO Contigo SI Nuevo Amanecer
+                </span>
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a style="color: blue" class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: blue" class="nav-link" href="somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: blue" class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: blue" class="nav-link" href="cursos.html">Cursos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="title">Servicios De Atención 2024</div>
+
+    <div class="content">
+        <div class="table-responsive">
+        <table >
+            <thead >
+                <tr>
+                    <th scope="col">SERVICIO</th>
+                    <th scope="col">DIAS</th>
+                    <th scope="col">HORARIOS</th>
+                    <th scope="col">CUOTA DE RECUPERACIÓN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nutrición (Everlin y)</td>
+                    <td>Martes</td>
+                    <td>9:00 AM a 2:00 PM</td>
+                    <td>De $100.00 a $150.00 Pesos. (Plan Alimenticio)</td>
+                </tr>
+                <tr>
+                    <td>Nutrición (Alison)</td>
+                    <td>Miércoles</td>
+                    <td>11:00 AM a 2:00 PM</td>
+                    <td>De $150.00 a $300.00 Pesos. (Estético)</td>
+                </tr>
+                <tr>
+                    <td>Psicólogo</td>
+                    <td>Lunes a Viernes</td>
+                    <td>3:00 PM a 5:00 PM</td>
+                    <td>$120.00 Consulta</td>
+                </tr>
+                <tr>
+                    <td>Medicina Alternativa</td>
+                    <td>Lunes, Martes, Jueves y Viernes</td>
+                    <td>Previa Cita</td>
+                    <td>$80.00 Masaje sencillo (Relajante)</td>
+                </tr>
+                <tr>
+                    <td>Campaña Visual Optometrista (Mauricio)</td>
+                    <td>Jueves</td>
+                    <td>3:00 a 5:00 PM</td>
+                    <td>Revisión $20.00 Previa Cita 4776109097</td>
+                </tr>
+                <tr>
+                    <td>Dentista</td>
+                    <td>Lunes a Viernes</td>
+                    <td>Previa Cita</td>
+                    <td>Revisión $50.00 WHATSAPP 4775116184</td>
+                </tr>
+                <tr>
+                    <td>Odontopediatra</td>
+                    <td>Jueves</td>
+                    <td>Previa Cita</td>
+                    <td>WHATSAPP 4777495651</td>
+                </tr>
+                <tr>
+                    <td>Grupo Canica 10-14</td>
+                    <td>Lunes, Martes y Miércoles</td>
+                    <td>3:00 PM a 5:00 PM</td>
+                    <td>Gratuito (CAEDI) Admisión de 10 a 14 años en adelante INF. 4773881260</td>
+                </tr>
+                <tr>
+                    <td>Prepa PRO</td>
+                    <td>Viernes</td>
+                    <td>3:00 AM a 4:30 PM</td>
+                    <td>Gratuito (CAEDI) Admisión de 18 años en adelante INF. 4773881260</td>
+                </tr>
+                <tr>
+                    <td>Prepa Abierta</td>
+                    <td>Lunes a Jueves</td>
+                    <td>Previa Cita</td>
+                    <td>Gratuito (INAEBA) INF. 477 864 6129, 477 107 5565</td>
+                </tr>
+                <tr>
+                    <td>Escuela para Adulto (Primaria y Secundaria)</td>
+                    <td>Martes</td>
+                    <td>6:00 a 8:00 PM</td>
+                    <td>Gratuito (INAEBA) INF. 477 864 6129, 477 107 5565</td>
+                </tr>
+                <tr>
+                    <td>Universidad Virtual UNIDEG</td>
+                    <td>Martes y Jueves</td>
+                    <td>Previa Cita</td>
+                    <td>Gratuito (CAEDI) Admisión de 18 años en adelante</td>
+                </tr>
+                <tr>
+                    <td>Ventanilla de Empleo</td>
+                    <td>Lunes a Viernes</td>
+                    <td>Previa Cita</td>
+                    <td>Gratuito (CAEDI) Admisión de 18 años en adelante</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="notes content">
+        <p>REQUISITOS DE INSCRIPCIÓN: Copias CURP, Comprobante de domicilio RECIENTE (INE y/o Acta de tutor para menores de edad), tel: 477-2490508 Av. Delta 3002, Nuevo Amanecer, Correo: disnuevoamanecerleon@guanajuato.gob.mx, Horario de atención Lunes a Viernes de 9 am a 7 pm.</p>
+    </div>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <img src="images/losoSI.png" alt="Logo" width="180" height="100"> <br> <br>
+                <img src="images/pru.png.webp" alt="Logo" width="180" height="100">
+            </div>
+            <div class="footer-column">
+                <p>Contacto: cisnuevoamanecerleon@guanajuato.gob.mx</p>
+                <p>Tel: 477-792-0346</p>
+            </div>
+            <div class="footer-column">
+                <p>Dirección:</p>
+                <p>Blvd Delta 3002 col. Nuevo Amanecer C.P. 37299 Guanajuato </p>
+            </div>
+            <div class="footer-column">
+                <p>Redes Sociales:</p>
+                <p>
+                    <a href="https://www.facebook.com/pages/Centro-Impulso-Social-Nuevo-Amanecer/146973942789245" target="_blank">Facebook</a><br>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Centro GTO Contigo SI Nuevo Amanecer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-6qF0J8H2t+hK7xwgA5K3p4p3f7nTyyGxlfTADFLyKq2pizW1cXBOjJgYtnoEa0Jf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-bR/jVSMu4LkBj1FSe3Aak2O6kEJeFT1yjkFkpZ4qNCo2H6FJT4x1X7zg0d4IvNdL" crossorigin="anonymous"></script>
+</body>
+</html>

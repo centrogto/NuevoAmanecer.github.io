@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centro GTO Contigo Si</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web del centro">
+    <meta name="keywords" content="bootstrap">
+    <meta name="author" content="Miguel Ponce">
+    <link href="css/sitioSTYLE.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+         body {
+            background-color: white;
+        }
+        .content {
+            margin: 20px;
+        }
+        .navbar {
+            justify-content: center;
+            border-bottom: 2px solid blue;
+            background-color: white;
+        }
+        .navbar-brand,
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav .nav-item {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+        }
+        footer {
+            background-color: #E6F1FC; /* Fondo azul claro */
+            padding: 20px;
+        }
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 10px;
+        }
+        .footer-bottom {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .about-section .about-item {
+            flex: 1;
+            margin: 0 10px;
+            text-align: justify;
+        }
+        .about-section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar-nav {
+                margin-top: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar-nav .nav-item {
+                margin: 10px 0;
+                text-align: center;
+            }
+            .about-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-item {
+                text-align: center;
+            }
+            iframe {
+                width: 100%;
+            }
+            .navbar-title-sm {
+                display: none; /* Oculta el título en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/losoSI.png" alt="Logo" width="120" height="102" class="d-inline-block align-text-top">
+            </a>
+            <span class="navbar-text mx-auto navbar-title-sm">
+            Centro GTO Contigo SI Nuevo Amanecer
+        </span>
+        <span class="navbar-text mx-auto">
+            
+        </span>
+            
+            <div  id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: blue;">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="somos.html" style="color: blue;">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html" style="color: blue;">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html" style="color: blue;">Cursos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/ima3.jpg" class="d-block w-100" alt="..." height="400" width="1200">
+            </div>
+            <div class="carousel-item">
+                <img src="images/ima1.jpg" class="d-block w-100" alt="..." height="400" width="1200">
+            </div>
+            <div class="carousel-item">
+                <img src="images/cur3.jpg" class="d-block w-100" alt="..." height="400" width="1200">
+            </div>
+            <div class="carousel-item">
+                <img src="images/cur7.jpg" class="d-block w-100" alt="..." height="400" width="1200">
+            </div>
+            <div class="carousel-item">
+                <img src="images/cur1.jpg" class="d-block w-100" alt="..." height="400" width="1200">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h1 class="text-center text-primary">Servicios</h1>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3>Servicio Dental</h3>
+                    <p>Contamos con servicio dental para todas las personas interesadas. <br>
+                        Se hace previa cita y la primera revisión tiene un costo de $50.</p> <br>
+                    <img src="images/dent.jpeg" class="img-fluid" alt="Servicio Dental">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3>Odontopediatría</h3>
+                    <p>El servicio de odontopediatría tiene diferentes costos accesibles para todas las personas. Para más información puede mandar mensaje al número 477 394 9651.</p>
+                    <img src="images/odonto.jpeg" class="img-fluid" alt="Odontopediatría">
+                </div>
+            </div>
+
+            <h1 class="text-center text-primary">Estudios</h1>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3>Prepa Abierta</h3>
+                    <p>En el centro comunitario queremos que las personas mejoren, por eso contamos con el sistema de prepa abierta.</p>
+                    <div>
+                        <strong>Requisitos:</strong>
+                        <ul>
+                            <li>Comprobante de domicilio reciente</li>
+                            <li>Copias del CURP</li>
+                            <li>Ser mayor de edad</li>
+                            <li>Copia del INE</li>
+                        </ul>
+                    </div>
+                    <img src="images/prepa.jpg" class="img-fluid" alt="Prepa Abierta">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3>Escuela</h3>
+                    <p>En el centro comunitario queremos que los niños y niñas sigan con sus estudios primarios, porque nos importa su futuro.</p>
+                    <div>
+                        <strong>Requisitos:</strong>
+                        <ul>
+                            <li>Copia del INE del padre o tutor</li>
+                            <li>Copias del CURP</li>
+                            <li>Comprobante de domicilio reciente</li> <br>
+                        </ul>
+                    </div>
+                    <img src="images/niños.jpeg" class="img-fluid" alt="Escuela">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <img src="images/losoSI.png" alt="Logo" width="180" height="100"> <br> <br>
+                <img src="images/pru.png.webp" alt="Logo" width="180" height="100">
+            </div>
+            <div class="footer-column">
+                <p>Contacto: cisnuevoamanecerleon@guanajuato.gob.mx</p>
+                <p>Tel: 477-792-0346</p>
+            </div>
+            <div class="footer-column">
+                <p>Dirección:</p>
+                <p>Blvd Delta 3002 col. Nuevo Amanecer C.P. 37299 <br> Guanajuato </p>
+            </div>
+            <div class="footer-column">
+                <p>Redes Sociales:</p>
+                <p>
+                    <a href="https://www.facebook.com/pages/Centro-Impulso-Social-Nuevo-Amanecer/146973942789245" target="_blank">Facebook</a><br>
+                    
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Centro GTO Contigo SI Nuevo Amanecer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
